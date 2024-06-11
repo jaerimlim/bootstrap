@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부트스트랩 - 06_버튼관련</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <h2>부트스트랩 - 06_버튼관련</h2>
+  <p>버튼은 button태그로 사용하여 클래스명('btn')을 적용한다.</p>
+  <ul>
+    <li>어둡게 : class="btn btn-dark"</li>
+    <li>흰색 : class="btn btn-light"</li>
+    <li>파랑 : class="btn btn-primary"</li>
+    <li>그레이 : class="btn btn-secondary"</li>
+    <li>초록 : class="btn btn-success"</li>
+    <li>하늘색 : class="btn btn-info"</li>
+    <li>주황 : class="btn btn-warning"</li>
+    <li>빨강 : class="btn btn-danger"</li>
+    <li>일반링크 : class="btn btn-link"</li>
+  </ul>
+  <button class="btn btn-dark">dark</button>
+  <button class="btn btn-light">light</button>
+  <button class="btn btn-primary">primary</button>
+  <button class="btn btn-secondary">secondary</button>
+  <button class="btn btn-success">success</button>
+  <button class="btn btn-info">info</button>
+  <button class="btn btn-warning">warning</button>
+  <button class="btn btn-danger">danger</button>
+
+  <button class="btn btn-link">link</button>
+  <input type="button" class="btn btn-link" value="link">
+  <a href="#" class="btn btn-link">link</a>
+  <p>버튼은 button, input type="button", a 태그요소에도 모두 적용이 가능하다.</p>
+
+  <h3>버튼 테두리만 적용 class='btn-outline-dark'</h3>
+  <button class="btn btn-outline-dark">검정 테두리</button>
+  <button class="btn btn-outline-light text-muted">light 테두리</button>
+  <button class="btn btn-outline-primary">primary 테두리</button>
+  <button class="btn btn-outline-secondary">secondary 테두리</button>
+  <button class="btn btn-outline-success">success 테두리</button>
+  <button class="btn btn-outline-info">info 테두리</button>
+  <button class="btn btn-outline-warning">warning 테두리</button>
+  <button class="btn btn-outline-danger">danger 테두리</button>
+  <button class="btn btn-outline-link">link</button>
+
+  <h3>버튼 크기지정하기 .btn-lg(20px), btn-sm(14px)</h3>
+  <button type="button" class="btn btn-primary">button</button>
+  <button type="button" class="btn btn-primary btn-lg">큰 button</button>
+  <button type="button" class="btn btn-primary btn-sm">작은 button</button>
+
+  <h3>버튼 비활성화</h3>
+  <button type="button" class="btn btn-primary" disabled>button 비활성화</button>
+
+  <h3>a요소 비활성화 disabled</h3>
+  <p>a요소에 비활성화 할 때는 href속성을 제거하고 disabled속성을 넣어준다.</p>
+  <a disabled class="btn">a요소 비활성화</a>
+
+  <h3>버튼블럭 class='d-grid gap-2' 적용시 반응형 버튼으로 가로 100%로 설정됨.</h3>
+  <div class='d-grid gap-2'>
+    <button type='button' class="btn btn-primary">로그인</button>
+    <button type='button' class="btn btn-danger">회원가입</button>
+  </div>
+
+  <h3>버튼그룹지정 : class="btn-group"</h3>
+  <p>여러 개의 버튼을 묶어 그룹화하거나, 세로로 겹쳐 놓을 수 있습니다. </p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Center</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+
+  <h3>버튼그룹 지정시 첫번째 버튼에만 활성화 하기 : active</h3>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary active">Left</button>
+    <button type="button" class="btn btn-primary">Center</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+
+  <h3>버튼그룹 지정시 테두리만 나오게하기</h3>
+  <div class="btn-group">
+    <button type="button" class="btn btn-outline-primary">Left</button>
+    <button type="button" class="btn btn-outline-primary">Center</button>
+    <button type="button" class="btn btn-outline-primary">Right</button>
+  </div>
+</body>
+</html>

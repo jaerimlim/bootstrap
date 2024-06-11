@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02부트스트랩_그리드레이아웃(반응형)</title>
+  <!-- 1. 부트스트랩 cdn방식으로 css연결하기 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    div{
+      background:#ccc;
+      border:3px solid #00f;
+      line-height:100px;
+    }
+  </style>
+
+  <!-- 2. 부트스트랩 cdn방식으로 js연결하기 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</head>
+<body>
+  <h2>02부트스트랩_그리드레이아웃(반응형)</h2>
+  <p>부트스트랩은 하나의 행에 반드시 12개의 열(컬럼)을 사용해야 합니다.</p>
+  <p>만약 12개의 열(컬럼)을 모두 사용하지 않으려면, 더 넓은 열(컬럼)을 만들기 위해 열(컬럼)들을 하나의 그룹으로 만들어 사용할 수 있습니다.</p>
+  <h3>그리드 시스템에서는 화면의 너비별 5개의 클래스를 가지고 있습니다.</h3>
+  <img src="./images/breakpoint.jpg" alt="해상도별 클래스이름">
+
+  <h3>그리드 레이아웃 실습</h3>
+  <div class="row"><!-- 992px이상인 경우 -->
+    <div class="col-lg-12">12컬럼을 한줄로 배치</div>
+  </div>
+  
+  <br><br>
+
+  <div class="row"><!-- 768px이상인 경우 -->
+    <div class="col-md-4">12컬럼을 4칸씩 병합하여 배치</div>
+    <div class="col-md-4">12컬럼을 4칸씩 병합하여 배치</div>
+    <div class="col-md-4">12컬럼을 4칸씩 병합하여 배치</div>
+  </div>
+
+  <br><br>
+  @media screen and (max-width:767px) {
+    //모바일 서식 
+  }
+  <div class="row"><!-- 576px 이상인 경우 -->
+    <div class="col-sm-6">12컬럼을 6칸씩 병합하여 배치</div>
+    <div class="col-sm-6">12컬럼을 6칸씩 병합하여 배치</div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+core.autocrlf=true
+user.name=jaerimlim
+user.email=jaerimlim@gmail.com
+safe.directory=D:/웹퍼블리싱/03_javascript
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+gui.recentrepo=E:/임재림

@@ -1,0 +1,11 @@
+
+프레임워크 vs 라이브러리 언어
+제어권을 누가 가지고 있는지?
+
+개발언어
+html, css, javscript, 
+
+라이브러리 언어
+jquery, 리액트, 앵귤러, vue.js
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
