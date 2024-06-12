@@ -13,6 +13,7 @@
     *{margin:0px; padding:0px;}
     h1{font-size:16px; padding-top:10px;}
     h1 img{width:120px;}
+    a{text-decoration: none; color:#333;}
   </style>
 </head>
 <body>
@@ -26,26 +27,73 @@
   <!-- 메인 콘텐츠 영역 -->
   <main>
     <section>
-      <dl>
-        <dt>부트스트랩 1일차</dt>
-        <dd><a href="./0607/01부트스트랩 소개와 장단점.html">01부트스트랩 소개와 장단점</a></dd>
-        <dd><a href="./0607/02그리드레이아웃(반응형).html">02그리드레이아웃(반응형)</a></dd>
-        <dd><a href="./0607/03실습하기_반응형 그리드 갤러리.html">03실습하기_반응형 그리드 갤러리</a></dd>
+      <dl class="list-group accordion accordion-flush">
+        <dt class="list-group-item list-group-item-secondary ">부트스트랩 1일차</dt>
+        <dd class="list-group-item list-group-item-action "><a href="./0607/01부트스트랩 소개와 장단점.html">01부트스트랩 소개와 장단점</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0607/02그리드레이아웃(반응형).html">02그리드레이아웃(반응형)</a></dd>
+        <dd class="list-group-item list-group-item-action"><a  href="./0607/03실습하기_반응형 그리드 갤러리.html">03실습하기_반응형 그리드 갤러리</a></dd>
 
-        <dt>부트스트랩 2일차</dt>
-        <dd><a href="./0610/03_문단_텍스트관련.html" title="문단_텍스트">03_문단_텍스트관련</a></dd>
-        <dd><a href="./0610/04_테이블 관련.html" title="테이블">04_테이블 관련</a></dd>
-        <dd><a href="./0610/05_이미지 관련.html" title="이미지">05_이미지 관련</a></dd>
-        <dd><a href="./0610/06_버튼관련.html" title="버튼">06_버튼관련</a></dd>
-        <dd><a href="./0610/07_페이지네이션.html" title="페이지네이션">07_페이지네이션</a></dd>
-        <dd><a href="./0610/list.php" title="페이지네이션">07_페이지네이션</a></dd>
+        <dt class="list-group-item list-group-item-secondary">부트스트랩 2일차</dt>
+        <dd class="list-group-item list-group-item-action"><a href="./0610/03_문단_텍스트관련.html" title="문단_텍스트">03_문단_텍스트관련</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0610/04_테이블 관련.html" title="테이블">04_테이블 관련</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0610/05_이미지 관련.html" title="이미지">05_이미지 관련</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0610/06_버튼관련.html" title="버튼">06_버튼관련</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0610/07_페이지네이션.html" title="페이지네이션">07_페이지네이션</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./list.php" title="게시판">실습-게시판 부트스트랩</a></dd>
         
-        <dt>부트스트랩 3일차</dt>
-        <dd></dd>
-        <dt>부트스트랩 일차</dt>
-        <dd></dd>
+        <dt class="list-group-item list-group-item-secondary">부트스트랩 3일차</dt>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/08_폼태그.html">08_폼태그</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/09_경고메시지_닫기.html">09_경고메시지_닫기</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/10_모달윈도우띄우기.html">10_모달윈도우띄우기</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/실습예제_회원가입폼.html">실습예제_회원가입폼</a></dd>
+
+        <dt class="list-group-item list-group-item-secondary">부트스트랩 4일차</dt>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/11_부트스트랩 아이콘.html">11_부트스트랩 아이콘</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/12_휘장과 라벨.html">12_휘장과 라벨</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/13_부트스트랩_진행바.html">13_부트스트랩_진행바</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/14_카드디자인.html">14_카드디자인</a></dd>
+        <dd class="list-group-item list-group-item-action"><a href="./0611/실습예제_당근마켓.html">실습예제_당근마켓(내물건팔기)</a></dd>
       </dl>
     </section>
+
+    <br> <br> <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            부트스트랩 1일차
+          </button>
+        </h2>
+
+        <ul id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <ul class="accordion-body list-group">
+            <li class="list-group-item list-group-item-action"><a href="./0607/01부트스트랩 소개와 장단점.html">01부트스트랩 소개와 장단점</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./0607/02그리드레이아웃(반응형).html">02그리드레이아웃(반응형)</a></li>
+            <li class="list-group-item list-group-item-action"><a  href="./0607/03실습하기_반응형 그리드 갤러리.html">03실습하기_반응형 그리드 갤러리</a></li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+            부트스트랩 2일차
+          </button>
+        </h2>
+
+        <ul id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <ul class="accordion-body list-group">
+            <li class="list-group-item list-group-item-action"><a href="./0610/03_문단_텍스트관련.html" title="문단_텍스트">03_문단_텍스트관련</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./0610/04_테이블 관련.html" title="테이블">04_테이블 관련</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./0610/05_이미지 관련.html" title="이미지">05_이미지 관련</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./0610/06_버튼관련.html" title="버튼">06_버튼관련</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./0610/07_페이지네이션.html" title="페이지네이션">07_페이지네이션</a></li>
+            <li class="list-group-item list-group-item-action"><a href="./list.php" title="게시판">실습-게시판 부트스트랩</a></li>
+          </ul>
+        </ul>
+      </div>
+
+    </div>
   </main>
 
   <!-- 푸터영역 -->
