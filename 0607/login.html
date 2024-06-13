@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습_로그인폼</title>
+    <!-- 1. 부트스트랩 cdn방식으로 css연결하기 -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" type="text/css">
+    </style>
+    <!-- 2. 부트스트랩 cdn방식으로 js연결하기 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+      <!-- 아이콘 주소 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      *{margin: 0px; padding: 0px; }
+      body{font-size: 14px;}
+      ul, li{ list-style: none;}
+      a{
+        color: #333; text-decoration: none;
+        display: block;
+      }
+      form{
+        line-height: 30px;
+        margin: 100px 0px;
+      }
+      form h2{
+        font-weight: 900;
+      }
+      form label{
+        font-weight: bold;
+      }
+      .s_font{
+        font-size: 12px;
+        line-height: 0px;
+      }
+      .red_font{
+        color: red;
+        font-weight: bold;
+      }
+      .btn-primary{width: 100%; margin: 20px 0px;}
+      .row{ margin: 0 auto; text-align:center;}
+      .bi{
+        font-size: 25px;
+      }
+      .radius{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 60px;
+        transform: translate(-6px,-26px);
+
+      }
+      .p_center{
+        text-align: center;
+      }
+      .search div:nth-child(2){
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
+      .sns{width: 100%;}
+      .sns .col a img{width: 60px; border-radius: 100%; }
+      .sns .col:nth-child(3) a img, .sns .col:last-child a img{border: 1px solid #ccc;}
+      .icon_box{display: flex; justify-content: space-around; text-align: center;}
+      .icon_box li{width: 100%; padding: 15px;}
+      .icon_box li:first-child,.icon_box li:last-child {border-top: 1px solid #ccc;}
+      .icon_box li:nth-child(2){border-top: 1px solid #ccc; border-top-right-radius: 20px;}
+      .icon_box li:nth-child(4){border-top: 1px solid #ccc; border-top-left-radius: 20px;}
+      .icon_box li:nth-child(3){transform: translateY(-40px); width: 90px; height: 90px; border: 1px solid #ccc; border-radius: 100%; box-shadow: 1px 2px 10px #949494;  }
+
+    </style>
+</head>
+<body>
+
+
+  <form action="" class="container">
+    <img src="./images/경주로온.png" alt="">
+    <h2>함께 여행을 떠나볼까요?</h2>
+    <p>로그인이 필요한 서비스에요</p>
+    <p>
+      <label for="id_btn">아이디</label>
+      <input type="text" name="id_btn" id="id_btn" class="form-control" placeholder="이메일을 입력해주세요">
+    </p>
+    <p>
+      <label for="pw_btn">비밀번호</label>
+      <p class="s_font">8자 이상의 영문, 숫자, 특수문자(!@#$%&)사용</p>
+      <input type="password" name="pw_btn" id="pw_btn" class="form-control" placeholder="비밀번호를 입력해주세요">
+    </p>
+  
+    <p class="red_font">8자 이상의 영문,숫자,특수문자(!@#$%&)사용</p>
+    <div class="row search"><!-- 576px이상인 경우 -->
+      <div class="col"><a href="#" title="아이디 찾기">아이디 찾기</a></div>
+      <div class="col"><a href="#" title="비밀번호 찾기">비밀번호 찾기</a></div>
+      <div class="col"><a href="#" title="회원가입 찾기">회원가입 찾기</a></div>
+    </div>
+  
+    <button type="button" class="btn btn-primary" disabled>로그인</button>
+
+    <p class="p_center">간편로그인</p>
+    <div class="row sns"><!-- 576px이상인 경우 -->
+      <div class="col"><a href="#" title="카카오톡"><img src="./images/카카오톡 로고 라운드.png" alt="카카오톡"></a></div>
+      <div class="col"><a href="#" title="네이버"><img src="./images/naver_pay_img_04.png" alt="네이버"></a></div>
+      <div class="col"><a href="#" title="구글"><img src="./images/0.png" alt="구글"></a></div>
+      <div class="col"><a href="#" title="애플"><img src="./images/image.png" alt="애플"></a></div>
+
+    </div>
+  </form>
+
+  <ul class="container icon_box">
+    <li><a href="#" title=""><i class="bi bi-house"></i></a></li>
+    <li><a href="#" title=""><i class="bi bi-bookmark"></i></a></li>
+    <li><a href="#" title="" class="btn btn-primary radius"><i class="bi bi-geo-alt-fill "></i></a></li>
+    <li><a href="#" title=""><i class="bi bi-person"></i></a></li>
+    <li><a href="#" title=""><i class="bi bi-list"></i></a></li>
+  </ul>
+
+
+</body>
+</html>
